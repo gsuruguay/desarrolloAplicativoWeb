@@ -1,0 +1,11 @@
+table{
+    width: 80%;
+    margin: auto;
+    text-align: left;
+    border-collapse: collapse;
+}
+tr:nth-child(even){background:#bdbaba;}
+th, td{
+    padding: 5px;
+    border: 1px solid rgb(138, 134, 134);
+}
