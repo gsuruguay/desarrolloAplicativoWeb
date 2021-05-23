@@ -5,14 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="../favicon.png" sizes="32x32" type="image/png">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,600;1,400&family=Gentium+Basic:ital@1&display=swap" rel="stylesheet">    <link rel="stylesheet" href="css/style.css">
     <title>Solicitud R3</title>
 </head>
 <body>
     <div class="container">
         <div class="row">
             <div class="columna">
-                <img id="imgVideo" src="img/imgParis.jpg" alt="Vista miniatura video">
+                <img id="thumbnail" src="img/imgParis.jpg" alt="Vista miniatura video">
             </div>
             <div class="columna">
                 <h1>París en 3 días "Torre Eiffel, Louvre, Versalles y Montmatre"</h1>
@@ -20,10 +21,10 @@
             </div>
         </div>
     </div>
-    <!-- Modal -->
-    <div id="vistaGrande" class="vistaGrande">
-        <div id="btnX">
-            <button id="btnCerrar">X</button>
+    <!-- Modal, contiene vista grande del video -->
+    <div id="modal" class="modal">
+        <div id="divBtnX">
+            <button id="btnX">X</button>
         </div>        
         <iframe id="video" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
         </iframe>

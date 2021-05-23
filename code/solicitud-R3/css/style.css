@@ -5,9 +5,11 @@
 }
 h1{
     font-size: calc(1.375rem + 1.5vw);
+    font-family: 'Alegreya', serif;
 }
 p{
     font-size: 1rem;
+    font-family: 'Gentium Basic', serif;
 }
 .row{
     display: flex;
@@ -22,7 +24,8 @@ p{
     padding: 15px;
 }
 img{
-    width: 100%;    
+    width: 100%; 
+    filter: drop-shadow(0 2px 5px rgba(12, 1, 1, 0.87));
 }
 img:hover{
     cursor: pointer; 
@@ -35,7 +38,7 @@ img:hover{
     height: 80%;
     display: block;
 }
-.vistaGrande{
+.modal{
     display: none;    
 }
 .activo{
@@ -48,12 +51,12 @@ img:hover{
     left: 0;
     display: block;
 }
-#btnX{
+#divBtnX{
     display: flex;
     justify-content: flex-end;
     margin: 10px;
 }
-#btnCerrar{
+#btnX{
     font-weight: bold;
     color: black;
     width: fit-content;
@@ -67,7 +70,6 @@ img:hover{
 
 @media only screen and (max-width: 768px){
     .columna{
-        flex-shrink: 0;
         width: 100%;
     }
     /*Vista modal*/
@@ -80,14 +82,10 @@ img:hover{
 }
 @media only screen and (max-width: 576px){
     .columna{
-        flex-shrink: 0;
         width: 100%;
     }
     /*Vista modal*/
     #video{
-        margin: auto;
-        width: 100%;
         height: 50%;
-        display: block;
     }
 }

@@ -15,7 +15,9 @@ th{
 th, td{
     padding: 5px;
     border: 1px solid #7d87e0;
+    font-family: 'Alegreya', serif;
 }
+/*Coloca el fondo intercalando filas segun posición par*/
 tr:nth-child(even){
     background:#8e98f0;
 }
@@ -50,6 +52,7 @@ tr:nth-child(even){
         padding: 5px;
         font-weight: bolder;
     }
+    /*Añade contenido según posiciones indicadas*/
     td:nth-of-type(1):before{
         content: "Nombre:"; 
     }
